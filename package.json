@@ -1,0 +1,70 @@
+{
+  "name": "@lore/web",
+  "version": "0.1.0",
+  "description": "Web interface for the Lore research system",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "test": "vitest",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@tanstack/react-router": "^1.61.0",
+    "@tanstack/react-query": "^5.17.0",
+    "@tanstack/react-table": "^8.11.0",
+    "@tanstack/react-virtual": "^3.0.0",
+    "d3": "^7.8.5",
+    "d3-force": "^3.0.0",
+    "d3-selection": "^3.0.0",
+    "d3-zoom": "^3.0.0",
+    "lucide-react": "^0.309.0",
+    "clsx": "^2.1.0",
+    "class-variance-authority": "^0.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@types/d3": "^7.4.3",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vitest": "^1.0.0",
+    "@storybook/react": "^7.6.0",
+    "@storybook/react-vite": "^7.6.0"
+  },
+  "peerDependencies": {
+    "@lore/api-types": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chreez/lore-web.git"
+  },
+  "keywords": [
+    "lore",
+    "research",
+    "visualization",
+    "knowledge-graph",
+    "react",
+    "tanstack"
+  ],
+  "author": "Chris",
+  "license": "MIT"
+}
